@@ -106,6 +106,21 @@
   .why-item h4 { margin: 0 0 4px; font-size: 15.5px; }
   .why-item p { margin: 0; color: var(--muted); font-size: 13.5px; }
 
+  .package-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 760px; margin: 0 auto; }
+  .package-card { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 24px 22px; text-align: left; }
+  .package-card.featured { border: 2px solid var(--pink); box-shadow: 0 14px 30px rgba(255,111,145,0.18); }
+  .package-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 10px; }
+  .package-name { font-weight: 800; font-size: 17px; }
+  .package-weight { font-size: 13px; font-weight: 700; color: var(--pink-dark); }
+  .package-card .weight-bar { margin-bottom: 16px; }
+  .package-items { list-style: none; margin: 0 0 14px; padding: 0; }
+  .package-items li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+  .package-items li:last-child { border-bottom: none; }
+  .package-items li span { color: var(--ink); }
+  .package-items li b { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  .package-total { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; padding-top: 10px; border-top: 1px solid var(--line); }
+  .package-note { text-align: center; font-size: 12.5px; color: var(--muted); max-width: 620px; margin: 22px auto 0; }
+
   .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 640px; margin: 0 auto; }
   .price-card {
     background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 28px 22px; text-align: left;
@@ -143,6 +158,7 @@
   @media (max-width: 720px) {
     h1 { font-size: 30px; }
     .steps, .why-grid, .box-items, .pricing-grid { grid-template-columns: 1fr 1fr; }
+    .package-grid { grid-template-columns: 1fr; }
     .steps { grid-template-columns: 1fr; }
     iframe.gform { height: 820px; }
   }
@@ -166,15 +182,16 @@
     <div class="hero-note">No payment now · Early members get launch pricing + a free bonus item</div>
 
     <div class="box-visual">
-      <div class="weight-bar"><div class="fill"></div></div>
-      <div class="weight-label"><span>Your box</span><span>0.92 / 1.0 KG — nicely full</span></div>
+      <div class="weight-bar"><div class="fill" style="width:93%"></div></div>
+      <div class="weight-label"><span>Full Box (real items)</span><span>0.93 / 1.0 KG — nicely full</span></div>
       <div class="box-items">
-        <div>Toner<br/>250ml</div>
-        <div>Serum<br/>80ml</div>
-        <div>Sunscreen</div>
-        <div>Cleansing Foam</div>
-        <div>Night Ampoule</div>
-        <div>Barrier Cream</div>
+        <div>Hyaluronic Toner<br/>250ml · 290g</div>
+        <div>Niacinamide Serum<br/>80ml · 110g</div>
+        <div>Cleansing Foam<br/>120ml · 155g</div>
+        <div>Cica Barrier Cream<br/>100ml · 135g</div>
+        <div>Water Bomb Cream<br/>90ml · 125g</div>
+        <div>Retinol Serum<br/>30ml · 40g</div>
+        <div>Snail Propolis Cream<br/>50ml · 70g</div>
       </div>
     </div>
   </div>
@@ -201,6 +218,53 @@
         <p>Tracked, consolidated shipping — no surprise customs shock, no five separate parcels from five sellers.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="wrap">
+    <h2 class="section-title">What's actually in the box</h2>
+    <p class="section-sub">Real Korean skincare SKUs, real (estimated) weights. No filler, no mystery items.</p>
+    <div class="package-grid">
+      <div class="package-card">
+        <div class="package-head">
+          <div class="package-name">Starter Box</div>
+          <div class="package-weight">~0.51 KG</div>
+        </div>
+        <div class="weight-bar"><div class="fill" style="width:51%"></div></div>
+        <ul class="package-items">
+          <li><span>Hyaluronic Acid Toner 250ml</span><b>290g</b></li>
+          <li><span>Niacinamide 5% Serum 80ml</span><b>110g</b></li>
+          <li><span>Aqua Essence Sunscreen 50ml</span><b>65g</b></li>
+          <li><span>Retinol 0.1% Serum 30ml</span><b>40g</b></li>
+        </ul>
+        <div class="package-total">
+          <span>4 items · 505g total</span>
+          <span>₩15,760 product cost</span>
+        </div>
+      </div>
+      <div class="package-card featured">
+        <div class="package-head">
+          <div class="package-name">Full Box</div>
+          <div class="package-weight">~0.93 KG</div>
+        </div>
+        <div class="weight-bar"><div class="fill" style="width:93%"></div></div>
+        <ul class="package-items">
+          <li><span>Hyaluronic Acid Toner 250ml</span><b>290g</b></li>
+          <li><span>Niacinamide 5% Serum 80ml</span><b>110g</b></li>
+          <li><span>Micro Whip Cleansing Foam 120ml</span><b>155g</b></li>
+          <li><span>Cica Panthenol Barrier Cream 100ml</span><b>135g</b></li>
+          <li><span>Water Bomb Hydrating Cream 90ml</span><b>125g</b></li>
+          <li><span>Retinol 0.1% Serum 30ml</span><b>40g</b></li>
+          <li><span>Snail Propolis Firming Cream 50ml</span><b>70g</b></li>
+        </ul>
+        <div class="package-total">
+          <span>7 items · 925g total</span>
+          <span>₩30,630 product cost</span>
+        </div>
+      </div>
+    </div>
+    <p class="package-note">Weights are estimated from product volume + typical packaging (bottle/jar), since exact net weights aren't published — we'll confirm exact figures once boxes are physically packed. Shipping (Korea → Malaysia, up to 1KG) is a separate flat fee on top of product cost, pooled across your whole box either way.</p>
   </div>
 </section>
 
