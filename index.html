@@ -4,6 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>KiloGlow — Fill Your Box to 1KG. One Shipping. More K-Beauty.</title>
+<meta name="description" content="Curated Korean skincare boxes, packed to the 1KG shipping limit and delivered to Malaysia for one flat fee. Join the waitlist for early access + launch pricing." />
+<meta property="og:title" content="KiloGlow — Fill Your Box to 1KG. One Shipping. More K-Beauty." />
+<meta property="og:description" content="Curated Korean skincare boxes, packed to the 1KG shipping limit and delivered to Malaysia for one flat fee." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ff6f91%22/><text x=%2250%22 y=%2268%22 font-size=%2255%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-family=%22Helvetica,Arial,sans-serif%22 font-weight=%22800%22>K</text></svg>" />
 <style>
   :root {
     --pink: #ff6f91;
@@ -101,6 +106,17 @@
   .why-item h4 { margin: 0 0 4px; font-size: 15.5px; }
   .why-item p { margin: 0; color: var(--muted); font-size: 13.5px; }
 
+  .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 640px; margin: 0 auto; }
+  .price-card {
+    background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 28px 22px; text-align: left;
+  }
+  .price-card.featured { border: 2px solid var(--pink); box-shadow: 0 14px 30px rgba(255,111,145,0.18); }
+  .price-tag { font-size: 13px; font-weight: 700; color: var(--pink-dark); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 10px; }
+  .price-amount { font-size: 32px; font-weight: 800; margin-bottom: 10px; }
+  .price-amount span { font-size: 13px; font-weight: 600; color: var(--muted); margin-left: 6px; }
+  .price-desc { margin: 0; font-size: 13.5px; color: var(--muted); }
+  .price-note { text-align: center; font-size: 12.5px; color: var(--muted); max-width: 520px; margin: 22px auto 0; }
+
   .honesty {
     max-width: 760px; margin: 0 auto; background: #fffaf6; border: 1px dashed #f0c9d2;
     border-radius: 16px; padding: 20px 24px; font-size: 14px; color: var(--muted); text-align: center;
@@ -126,7 +142,7 @@
 
   @media (max-width: 720px) {
     h1 { font-size: 30px; }
-    .steps, .why-grid, .box-items { grid-template-columns: 1fr 1fr; }
+    .steps, .why-grid, .box-items, .pricing-grid { grid-template-columns: 1fr 1fr; }
     .steps { grid-template-columns: 1fr; }
     iframe.gform { height: 820px; }
   }
@@ -221,6 +237,26 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2 class="section-title">Simple, honest pricing</h2>
+    <p class="section-sub">One flat delivered price to Malaysia. No shipping calculator, no surprise fees at customs.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-tag">Starter Box</div>
+        <div class="price-amount">RM89<span>est.</span></div>
+        <p class="price-desc">4–5 everyday essentials — cleanse, hydrate, protect. Good first box to try us out.</p>
+      </div>
+      <div class="price-card featured">
+        <div class="price-tag">Full Box</div>
+        <div class="price-amount">RM139<span>est.</span></div>
+        <p class="price-desc">7–8 items filling the box close to 1KG — best value per item, includes night care + treatment steps.</p>
+      </div>
+    </div>
+    <p class="price-note">Prices are early estimates for waitlist planning — final pricing confirmed before launch, and waitlist members get first access to launch-day rates.</p>
   </div>
 </section>
 
