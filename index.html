@@ -117,8 +117,10 @@
   .package-items li { display: flex; justify-content: space-between; gap: 10px; padding: 7px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
   .package-items li:last-child { border-bottom: none; }
   .package-items li span { color: var(--ink); }
-  .package-items li b { color: var(--muted); font-weight: 600; white-space: nowrap; }
-  .package-total { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; padding-top: 10px; border-top: 1px solid var(--line); }
+  .package-items li span i { font-style: normal; color: var(--muted); font-size: 12px; margin-left: 4px; }
+  .package-items li b { color: var(--pink-dark); font-weight: 700; white-space: nowrap; }
+  .package-total { display: flex; justify-content: space-between; font-size: 12.5px; color: var(--muted); padding-top: 10px; border-top: 1px solid var(--line); }
+  .package-grand-total { text-align: right; font-size: 18px; font-weight: 800; margin-top: 8px; color: var(--ink); }
   .package-note { text-align: center; font-size: 12.5px; color: var(--muted); max-width: 620px; margin: 22px auto 0; }
 
   .pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 640px; margin: 0 auto; }
@@ -233,15 +235,16 @@
         </div>
         <div class="weight-bar"><div class="fill" style="width:51%"></div></div>
         <ul class="package-items">
-          <li><span>Hyaluronic Acid Toner 250ml</span><b>290g</b></li>
-          <li><span>Niacinamide 5% Serum 80ml</span><b>110g</b></li>
-          <li><span>Aqua Essence Sunscreen 50ml</span><b>65g</b></li>
-          <li><span>Retinol 0.1% Serum 30ml</span><b>40g</b></li>
+          <li><span>Hyaluronic Acid Toner 250ml <i>290g</i></span><b>RM28</b></li>
+          <li><span>Niacinamide 5% Serum 80ml <i>110g</i></span><b>RM37</b></li>
+          <li><span>Aqua Essence Sunscreen 50ml <i>65g</i></span><b>RM26</b></li>
+          <li><span>Retinol 0.1% Serum 30ml <i>40g</i></span><b>RM26</b></li>
         </ul>
         <div class="package-total">
           <span>4 items · 505g total</span>
-          <span>₩15,760 product cost</span>
+          <span>RM117 + RM106 delivery</span>
         </div>
+        <div class="package-grand-total">RM223 all-in</div>
       </div>
       <div class="package-card featured">
         <div class="package-head">
@@ -250,21 +253,22 @@
         </div>
         <div class="weight-bar"><div class="fill" style="width:93%"></div></div>
         <ul class="package-items">
-          <li><span>Hyaluronic Acid Toner 250ml</span><b>290g</b></li>
-          <li><span>Niacinamide 5% Serum 80ml</span><b>110g</b></li>
-          <li><span>Micro Whip Cleansing Foam 120ml</span><b>155g</b></li>
-          <li><span>Cica Panthenol Barrier Cream 100ml</span><b>135g</b></li>
-          <li><span>Water Bomb Hydrating Cream 90ml</span><b>125g</b></li>
-          <li><span>Retinol 0.1% Serum 30ml</span><b>40g</b></li>
-          <li><span>Snail Propolis Firming Cream 50ml</span><b>70g</b></li>
+          <li><span>Hyaluronic Acid Toner 250ml <i>290g</i></span><b>RM22</b></li>
+          <li><span>Niacinamide 5% Serum 80ml <i>110g</i></span><b>RM29</b></li>
+          <li><span>Micro Whip Cleansing Foam 120ml <i>155g</i></span><b>RM21</b></li>
+          <li><span>Cica Panthenol Barrier Cream 100ml <i>135g</i></span><b>RM29</b></li>
+          <li><span>Water Bomb Hydrating Cream 90ml <i>125g</i></span><b>RM23</b></li>
+          <li><span>Retinol 0.1% Serum 30ml <i>40g</i></span><b>RM21</b></li>
+          <li><span>Snail Propolis Firming Cream 50ml <i>70g</i></span><b>RM35</b></li>
         </ul>
         <div class="package-total">
           <span>7 items · 925g total</span>
-          <span>₩30,630 product cost</span>
+          <span>RM180 + RM106 delivery</span>
         </div>
+        <div class="package-grand-total">RM286 all-in</div>
       </div>
     </div>
-    <p class="package-note">Weights are estimated from product volume + typical packaging (bottle/jar), since exact net weights aren't published — we'll confirm exact figures once boxes are physically packed. Shipping (Korea → Malaysia, up to 1KG) is a separate flat fee on top of product cost, pooled across your whole box either way.</p>
+    <p class="package-note">Weights are estimated from product volume + typical packaging (bottle/jar), since exact net weights aren't published — we'll confirm exact figures once boxes are physically packed. Item prices already include our sourcing + curation fee, and delivery (Korea → Malaysia, consolidated up to 1KG) is included in the all-in total — no surprise charges later.</p>
   </div>
 </section>
 
@@ -311,16 +315,16 @@
     <div class="pricing-grid">
       <div class="price-card">
         <div class="price-tag">Starter Box</div>
-        <div class="price-amount">RM89<span>est.</span></div>
-        <p class="price-desc">4–5 everyday essentials — cleanse, hydrate, protect. Good first box to try us out.</p>
+        <div class="price-amount">RM223<span>est.</span></div>
+        <p class="price-desc">4 everyday essentials (~0.51KG) — cleanse, hydrate, protect. Delivery included in the price.</p>
       </div>
       <div class="price-card featured">
         <div class="price-tag">Full Box</div>
-        <div class="price-amount">RM139<span>est.</span></div>
-        <p class="price-desc">7–8 items filling the box close to 1KG — best value per item, includes night care + treatment steps.</p>
+        <div class="price-amount">RM286<span>est.</span></div>
+        <p class="price-desc">7 items filling the box to ~0.93KG — best value per gram, includes night care + treatment steps. Delivery included.</p>
       </div>
     </div>
-    <p class="price-note">Prices are early estimates for waitlist planning — final pricing confirmed before launch, and waitlist members get first access to launch-day rates.</p>
+    <p class="price-note">Prices include product + consolidated Korea→Malaysia shipping, no hidden fees at customs. Early estimates for waitlist planning — final pricing confirmed before launch, and waitlist members get first access to launch-day rates.</p>
   </div>
 </section>
 
