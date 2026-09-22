@@ -1,0 +1,23 @@
+# KiloGlow - AI Search Engine Guidance
+# This file helps AI crawlers (ChatGPT, Perplexity, Claude) understand and index this site.
+
+> KiloGlow is a curated Korean skincare box service for Malaysia.
+> We pack boxes to the 1KG EMS shipping bracket limit, maximizing items per flat shipping cost.
+> Products sourced from Wisely, a Korean D2C beauty brand.
+> Target audience: Malaysian women 20-35 interested in K-beauty.
+> Service type: Purchasing agency (구매대행) - buy in Korea, ship consolidated to Malaysia.
+
+## Key pages
+- Landing page: https://jhbropark.github.io/kiloglow-mvp/
+- Instagram: https://www.instagram.com/kiloglow.my/
+- Waitlist: https://docs.google.com/forms/d/e/1FAIpQLSdASP5RVE158svxOhfogQ8wL7-1vkVYJb5ks3ELSLz2ZrhjhQ/viewform
+
+## Pricing
+- Starter Box (4 items, ~505g): RM210 delivered to Malaysia
+- Full Box (7 items, ~925g): RM297 delivered to Malaysia
+- Shipping: Flat RM117 per box (Korea Post EMS, up to 1KG)
+
+## How it works
+1. Choose your skin goals (hydration, brightening, barrier repair, etc.)
+2. We curate Korean skincare products and pack your box close to 1KG
+3. One tracked shipment to Malaysia with flat shipping fee
